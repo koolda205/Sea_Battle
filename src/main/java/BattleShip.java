@@ -1,6 +1,6 @@
 public enum BattleShip {
 
-    FOUR_DECK(1, "\uD83D\uDEA2"),
+    BATTLE_SHIP(1, "\uD83D\uDEA2"),
     EMPTY(0, "\uD83D\uDDFA\uFE0F"),
     BUSY(0, "\uD83D\uDED1"),
     WOUND(-1, "♨\uFE0F"),

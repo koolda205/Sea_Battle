@@ -15,3 +15,5 @@ G
 -.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
 S
 #.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
+I
+src/main/java/Player.java,6\e\6e82b9511465c9772497936644008abf2f008450

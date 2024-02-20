@@ -8,12 +8,12 @@ public class Main {
     public static void main(String[] args) {
 
         BattleShip[][] battleShips = new  BattleShip [10][10];
-        for (int i = 0; i < battleShips.length; i++) {
-            for (int j = 0; j < battleShips.length; j++) {
-                battleShips[i][j] =  BattleShip.EMPTY;
+        for (int x = 0; x < battleShips.length; x++) {
+            for (int y = 0; y < battleShips.length; y++) {
+                battleShips[y][x] =  BattleShip.EMPTY;
             }
         }
-        BattleBoard battleBoard = new BattleBoard(battleShips);
+        Player dk = new Player(battleShips, "DK", 20);
 
         Scanner scanner = new Scanner(System.in);
 
@@ -33,8 +33,8 @@ public class Main {
                 int x = Integer.parseInt(stringX) - 1;
                 int y = Integer.parseInt(stringY) - 1;
 
-                battleShips[y][x] = BattleShip.FOUR_DECK;
-                battleBoard.print();
+                battleShips[y][x] = BattleShip.BUSY;
+                dk.print();
 
             } catch (Exception e) {
                 System.err.println("Введите число");
