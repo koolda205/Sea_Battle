@@ -105,14 +105,14 @@ public class Main {
 
                     int y = Integer.parseInt(stringY) - 1;
                     int x = Integer.parseInt(stringX) - 1;
-                    battleField[y][x] = BattleShip.BUSY;
 
-                    boolean missPlayer1 = battleBoardPlayer1.printBattleField();
-                    System.out.println("Вы попали! Продолжает стрелять " + player1.getName());
+                    boolean hitPlayer1 = battleBoardPlayer1.printBattleField(y, x);
 
-                    if (missPlayer1) {
+                    if (!hitPlayer1) {
                         System.out.println("Вы промахнулись, стреляет " + player2.getName());
                         flag = false;
+                    } else {
+                        System.out.println("Вы попали! Продолжает стрелять " + player1.getName());
                     }
 
                 } else {
@@ -123,14 +123,14 @@ public class Main {
 
                     int w = Integer.parseInt(stringW) - 1;
                     int z = Integer.parseInt(stringZ) - 1;
-                    battleField[w][z] = BattleShip.BUSY;
 
-                    boolean missPlayer2 = battleBoardPlayer2.printBattleField();
-                    System.out.println("Вы попали! Продолжает стрелять " + player2.getName());
+                    boolean hitPlayer2 = battleBoardPlayer2.printBattleField(w, z);
 
-                    if (missPlayer2) {
+                    if (!hitPlayer2) {
                         System.out.println("Вы промахнулись, стреляет " + player1.getName());
                         flag = true;
+                    } else {
+                        System.out.println("Вы попали! Продолжает стрелять " + player2.getName());
                     }
                 }
             } catch (Exception e) {
