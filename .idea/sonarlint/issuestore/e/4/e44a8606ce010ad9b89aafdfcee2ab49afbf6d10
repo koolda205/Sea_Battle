@@ -1,7 +1,11 @@
 
-F
-java:S1481Z")Remove this unused "flag" local variable.(Ö°š·8û­ÎèÜ1
-G	java:S106m"+Replace this use of System.out by a logger.(à®Š¸8ı­ÎèÜ1
-L	java:S106w"+Replace this use of System.out by a logger.(Šµâòøÿÿÿÿ8ş­ÎèÜ1
-G	java:S106z"+Replace this use of System.err by a logger.(êı÷‚8ş­ÎèÜ1
-L	java:S106}"+Replace this use of System.out by a logger.(ˆ³ÎŒûÿÿÿÿ8ş­ÎèÜ1
+o
+java:S3776U"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(œÁ™à8¹é¶éÜ1
+L	java:S106^"+Replace this use of System.out by a logger.(½¬üÂøÿÿÿÿ8¼é¶éÜ1
+G	java:S106o"+Replace this use of System.out by a logger.(Íä²²8¼é¶éÜ1
+L	java:S106r"+Replace this use of System.out by a logger.(ˆ¸‹üÿÿÿÿÿ8¼é¶éÜ1
+G	java:S106w"+Replace this use of System.out by a logger.(ªÉ÷ƒ8¼é¶éÜ1
+M	java:S106"+Replace this use of System.out by a logger.(ÚÃŸ¼ûÿÿÿÿ8½é¶éÜ1
+G	java:S106„"+Replace this use of System.out by a logger.(ïÃ—8æıÎéÜ1
+H	java:S106‰"+Replace this use of System.err by a logger.(êı÷‚8½é¶éÜ1
+M	java:S106Œ"+Replace this use of System.out by a logger.(ˆ³ÎŒûÿÿÿÿ8Ş´ÑéÜ1

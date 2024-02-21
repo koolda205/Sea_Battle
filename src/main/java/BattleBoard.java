@@ -19,7 +19,7 @@ public class BattleBoard {
             }
             System.out.println();
         }
-        return true;
+        return false;
     }
 
     public void printPlayerBattleShip() {

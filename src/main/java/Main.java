@@ -79,45 +79,60 @@ public class Main {
         BattleBoard battleBoardPlayer1 = new BattleBoard(battleField, player1);
         BattleBoard battleBoardPlayer2 = new BattleBoard(battleField, player2);
 
-        seaBattle (player1, player2, battleBoardPlayer1, battleBoardPlayer2, battleField);
+        seaBattle(player1, player2, battleBoardPlayer1, battleBoardPlayer2, battleField);
     }
-    public static void seaBattle (Player player1, Player player2, BattleBoard battleBoardPlayer1, BattleBoard battleBoardPlayer2, BattleShip[][] battleField) {
+
+    public static void seaBattle(Player player1, Player player2, BattleBoard battleBoardPlayer1, BattleBoard battleBoardPlayer2, BattleShip[][] battleField) {
 
         Scanner scanner = new Scanner(System.in);
 
+        boolean flag = true;
+
         while (player1.getLive() > 0 || player2.getLive() > 0) {
-
-            boolean flag = true;
-
-            String stringY = scanner.nextLine();
-            String stringX = scanner.nextLine();
-
-            if (stringX.equalsIgnoreCase("stop") ||
-                    stringY.equalsIgnoreCase("stop") ||
-                    stringX.equalsIgnoreCase("стоп") ||
-                    stringY.equalsIgnoreCase("стоп")) {
-                break;
-            }
-
             try {
-                int y = Integer.parseInt(stringY) - 1;
-                int x = Integer.parseInt(stringX) - 1;
-                battleField[y][x] = BattleShip.BUSY;
-                boolean missPlayer1 = battleBoardPlayer1.printBattleField();
+                if (flag) {
+                    System.out.println("Стреляет " + player1.getName());
 
-                if (missPlayer1) {
-                    System.out.println("Вы промахнулись, стреляет игрок " + player2.getName());
-                }
+                    String stringY = scanner.nextLine();
+                    String stringX = scanner.nextLine();
 
-                String stringW = scanner.nextLine();
-                String stringZ = scanner.nextLine();
-                int w = Integer.parseInt(stringW) - 1;
-                int z = Integer.parseInt(stringZ) - 1;
-                battleField[w][z] = BattleShip.BUSY;
-                boolean missPlayer2 = battleBoardPlayer2.printBattleField();
-                    if (missPlayer2) {
-                        System.out.println("Вы промахнулись, стреляет игрок " + player1.getName());
+                    if (stringX.equalsIgnoreCase("stop") ||
+                            stringY.equalsIgnoreCase("stop") ||
+                            stringX.equalsIgnoreCase("стоп") ||
+                            stringY.equalsIgnoreCase("стоп")) {
+                        break;
                     }
+
+                    int y = Integer.parseInt(stringY) - 1;
+                    int x = Integer.parseInt(stringX) - 1;
+                    battleField[y][x] = BattleShip.BUSY;
+
+                    boolean missPlayer1 = battleBoardPlayer1.printBattleField();
+                    System.out.println("Вы попали! Продолжает стрелять " + player1.getName());
+
+                    if (missPlayer1) {
+                        System.out.println("Вы промахнулись, стреляет " + player2.getName());
+                        flag = false;
+                    }
+
+                } else {
+                    System.out.println("Стреляет " + player2.getName());
+
+                    String stringW = scanner.nextLine();
+                    String stringZ = scanner.nextLine();
+
+                    int w = Integer.parseInt(stringW) - 1;
+                    int z = Integer.parseInt(stringZ) - 1;
+                    battleField[w][z] = BattleShip.BUSY;
+
+                    boolean missPlayer2 = battleBoardPlayer2.printBattleField();
+                    System.out.println("Вы попали! Продолжает стрелять " + player2.getName());
+
+                    if (missPlayer2) {
+                        System.out.println("Вы промахнулись, стреляет " + player1.getName());
+                        flag = true;
+                    }
+                }
             } catch (Exception e) {
                 System.err.println("Введите число от 1 до 10");
             }
