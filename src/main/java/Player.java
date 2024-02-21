@@ -4,12 +4,12 @@ import java.util.Objects;
 public class Player {
     private BattleShip[][] battleShip;
     private String name;
-    private int live;
+    private int enemyShip;
 
-    public Player(BattleShip[][] battleShip, String name, int live) {
+    public Player(BattleShip[][] battleShip, String name, int enemyShip) {
         this.battleShip = battleShip;
         this.name = name;
-        this.live = live;
+        this.enemyShip = enemyShip;
     }
 
     public BattleShip[][] getBattleShip() {
@@ -28,12 +28,12 @@ public class Player {
         this.name = name;
     }
 
-    public int getLive() {
-        return live;
+    public int getEnemyShip() {
+        return enemyShip;
     }
 
-    public void setLive(int live) {
-        this.live = live;
+    public void setEnemyShip(int enemyShip) {
+        this.enemyShip = enemyShip;
     }
 
     public void printPlayerBattleShip() {
@@ -50,12 +50,12 @@ public class Player {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Player player = (Player) o;
-        return live == player.live && Arrays.equals(battleShip, player.battleShip) && Objects.equals(name, player.name);
+        return enemyShip == player.enemyShip && Arrays.equals(battleShip, player.battleShip) && Objects.equals(name, player.name);
     }
 
     @Override
     public int hashCode() {
-        int result = Objects.hash(name, live);
+        int result = Objects.hash(name, enemyShip);
         result = 31 * result + Arrays.hashCode(battleShip);
         return result;
     }
@@ -65,7 +65,7 @@ public class Player {
         return "Player{" +
                 "battleShip=" + Arrays.toString(battleShip) +
                 ", name='" + name + '\'' +
-                ", live=" + live +
+                ", enemyShip" + enemyShip +
                 '}';
     }
 }

@@ -17,60 +17,58 @@ public class BattleBoard {
             battleField[y][x] = BattleShip.WOUND;
             playerBattleShip[y][x] = BattleShip.WOUND;
             player.setBattleShip(playerBattleShip);
-            System.out.println("Точно в цель!");
+            player.setEnemyShip(player.getEnemyShip() - 1);
+
             for (int i = 0; i < battleField.length; i++) {
                 for (int j = 0; j < battleField.length; j++) {
                     System.out.print(battleField[j][i].getName());
                 }
                 System.out.println();
             }
+            System.out.println("Точно в цель!");
+            System.out.println("У соперника осталось кораблей: " + player.getEnemyShip());
             return true;
         } else if (playerBattleShip[y][x] == BattleShip.WOUND) {
             battleField[y][x] = BattleShip.WOUND;
-            System.out.println("Метьтесь лучше, вы сюда уже стреляли!");
+
             for (int i = 0; i < battleField.length; i++) {
                 for (int j = 0; j < battleField.length; j++) {
                     System.out.print(battleField[j][i].getName());
                 }
                 System.out.println();
             }
+            System.out.println("Метьтесь лучше, вы сюда уже стреляли!");
+            System.out.println();
             return false;
         } else if (playerBattleShip[y][x] == BattleShip.EMPTY) {
             battleField[y][x] = BattleShip.BUSY;
             playerBattleShip[y][x] = BattleShip.BUSY;
             player.setBattleShip(playerBattleShip);
-            System.out.println("Мимо! В следующий раз обязательно повезет!");
+
             for (int i = 0; i < battleField.length; i++) {
                 for (int j = 0; j < battleField.length; j++) {
                     System.out.print(battleField[j][i].getName());
                 }
                 System.out.println();
             }
+            System.out.println("Мимо! В следующий раз обязательно повезет!");
+            System.out.println();
             return false;
         }
         battleField[y][x] = BattleShip.BUSY;
         playerBattleShip[y][x] = BattleShip.BUSY;
         player.setBattleShip(playerBattleShip);
-        System.out.println("Метьтесь лучше, вы сюда уже стреляли!");
+
         for (int i = 0; i < battleField.length; i++) {
             for (int j = 0; j < battleField.length; j++) {
                 System.out.print(battleField[j][i].getName());
             }
             System.out.println();
         }
+        System.out.println("Метьтесь лучше, вы сюда уже стреляли!");
+        System.out.println();
         return false;
     }
-
-
-//    public void printPlayerBattleShip() {
-//        BattleShip[][] playerBattleShip = player.getBattleShip();
-//        for (int i = 0; i < playerBattleShip.length; i++) {
-//            for (int j = 0; j < playerBattleShip.length; j++) {
-//                System.out.print(playerBattleShip[i][j].getName());
-//            }
-//            System.out.println();
-//        }
-//    }
 
     @Override
     public boolean equals(Object o) {
