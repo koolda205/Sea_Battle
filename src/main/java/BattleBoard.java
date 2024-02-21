@@ -11,7 +11,7 @@ public class BattleBoard {
 
     }
 
-    public void printBattleField() {
+    public boolean printBattleField() {
 
         for (int i = 0; i < battleField.length; i++) {
             for (int j = 0; j < battleField.length; j++) {
@@ -19,6 +19,7 @@ public class BattleBoard {
             }
             System.out.println();
         }
+        return true;
     }
 
     public void printPlayerBattleShip() {

@@ -102,10 +102,20 @@ public class Main {
             try {
                 int y = Integer.parseInt(stringY) - 1;
                 int x = Integer.parseInt(stringX) - 1;
-
                 battleField[y][x] = BattleShip.BUSY;
-                battleBoardPlayer1.printBattleField();
+                boolean missPlayer1 = battleBoardPlayer1.printBattleField();
 
+                if (missPlayer1) {
+                    System.out.println("Вы промахнулись, стреляет другой игрок");
+                }
+
+                y = Integer.parseInt(stringY) - 1;
+                x = Integer.parseInt(stringX) - 1;
+                battleField[y][x] = BattleShip.BUSY;
+                boolean missPlayer2 = battleBoardPlayer2.printBattleField();
+                    if (missPlayer2) {
+                        System.out.println("Вы промахнулись, стреляет другой игрок");
+                    }
             } catch (Exception e) {
                 System.err.println("Введите число от 1 до 10");
             }
