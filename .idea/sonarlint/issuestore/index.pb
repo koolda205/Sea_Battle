@@ -17,3 +17,5 @@ S
 #.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
 I
 src/main/java/Player.java,6\e\6e82b9511465c9772497936644008abf2f008450
+=
+Education.iml,d\4\d4e17da48d3f3bb0ae65173a0250fdd3498e368e

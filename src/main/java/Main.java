@@ -7,13 +7,16 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        BattleShip[][] battleShips = new  BattleShip [10][10];
-        for (int x = 0; x < battleShips.length; x++) {
-            for (int y = 0; y < battleShips.length; y++) {
-                battleShips[y][x] =  BattleShip.EMPTY;
+        BattleShip[][] battleField = new  BattleShip [10][10];
+        for (int x = 0; x < battleField.length; x++) {
+            for (int y = 0; y < battleField.length; y++) {
+                battleField[y][x] =  BattleShip.EMPTY;
             }
         }
-        Player dk = new Player(battleShips, "DK", 20);
+        BattleShip[][] battleShip = new  BattleShip [10][10];
+
+
+        Player dk = new Player(battleField, battleShip, "DK", 20);
 
         Scanner scanner = new Scanner(System.in);
 
@@ -33,7 +36,7 @@ public class Main {
                 int x = Integer.parseInt(stringX) - 1;
                 int y = Integer.parseInt(stringY) - 1;
 
-                battleShips[y][x] = BattleShip.BUSY;
+                battleField[y][x] = BattleShip.BUSY;
                 dk.print();
 
             } catch (Exception e) {
