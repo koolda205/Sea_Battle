@@ -1,13 +1,11 @@
 
 o
-java:S3776U"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(Α™ΰ8…±Έλά1
-O
-java:S1172U"2Remove this unused method parameter "battleField".(Α™ΰ8†±Έλά1
-L	java:S106^"+Replace this use of System.out by a logger.(½¬όΒψÿÿÿÿ8±Έλά1
-L	java:S106p"+Replace this use of System.out by a logger.(Έ‹όÿÿÿÿÿ8‹±Έλά1
-G	java:S106s"+Replace this use of System.out by a logger.(Νδ²²8‹±Έλά1
-G	java:S106w"+Replace this use of System.out by a logger.(ªΙχƒ8‹±Έλά1
-G	java:S106‚"+Replace this use of System.out by a logger.(οΓ—8±Έλά1
-M	java:S106…"+Replace this use of System.out by a logger.(ΪΓΌϋÿÿÿÿ8±Έλά1
-H	java:S106‰"+Replace this use of System.err by a logger.(κύχ‚8±Έλά1
-M	java:S106"+Replace this use of System.out by a logger.(³Ξϋÿÿÿÿ8±Έλά1
+java:S3776\"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(Ο°έ€8…±Έλά1
+L	java:S106e"+Replace this use of System.out by a logger.(½¬όΒψÿÿÿÿ8±Έλά1
+L	java:S106w"+Replace this use of System.out by a logger.(Έ‹όÿÿÿÿÿ8‹±Έλά1
+G	java:S106z"+Replace this use of System.out by a logger.(Νδ²²8‹±Έλά1
+G	java:S106~"+Replace this use of System.out by a logger.(ªΙχƒ8‹±Έλά1
+G	java:S106‰"+Replace this use of System.out by a logger.(οΓ—8±Έλά1
+M	java:S106"+Replace this use of System.out by a logger.(ΪΓΌϋÿÿÿÿ8±Έλά1
+H	java:S106"+Replace this use of System.err by a logger.(κύχ‚8±Έλά1
+M	java:S106“"+Replace this use of System.out by a logger.(³Ξϋÿÿÿÿ8±Έλά1

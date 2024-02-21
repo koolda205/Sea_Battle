@@ -3,10 +3,17 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        BattleShip[][] battleField = new BattleShip[10][10];
-        for (int x = 0; x < battleField.length; x++) {
-            for (int y = 0; y < battleField.length; y++) {
-                battleField[x][y] = BattleShip.EMPTY;
+        BattleShip[][] battleFieldPlayer1 = new BattleShip[10][10];
+        for (int x = 0; x < battleFieldPlayer1.length; x++) {
+            for (int y = 0; y < battleFieldPlayer1.length; y++) {
+                battleFieldPlayer1[x][y] = BattleShip.EMPTY;
+            }
+        }
+
+        BattleShip[][] battleFieldPlayer2 = new BattleShip[10][10];
+        for (int x = 0; x < battleFieldPlayer2.length; x++) {
+            for (int y = 0; y < battleFieldPlayer2.length; y++) {
+                battleFieldPlayer2[x][y] = BattleShip.EMPTY;
             }
         }
         BattleShip[][] battleShipPlayer1 = {
@@ -76,13 +83,13 @@ public class Main {
         Player player1 = new Player(battleShipPlayer1, "Player1", 20);
         Player player2 = new Player(battleShipPlayer2, "Player2", 20);
 
-        BattleBoard battleBoardPlayer1 = new BattleBoard(battleField, player1);
-        BattleBoard battleBoardPlayer2 = new BattleBoard(battleField, player2);
+        BattleBoard battleBoardPlayer1 = new BattleBoard(battleFieldPlayer1, player1);
+        BattleBoard battleBoardPlayer2 = new BattleBoard(battleFieldPlayer2, player2);
 
-        seaBattle(player1, player2, battleBoardPlayer1, battleBoardPlayer2, battleField);
+        seaBattle(player1, player2, battleBoardPlayer1, battleBoardPlayer2);
     }
 
-    public static void seaBattle(Player player1, Player player2, BattleBoard battleBoardPlayer1, BattleBoard battleBoardPlayer2, BattleShip[][] battleField) {
+    public static void seaBattle(Player player1, Player player2, BattleBoard battleBoardPlayer1, BattleBoard battleBoardPlayer2) {
 
         Scanner scanner = new Scanner(System.in);
 
