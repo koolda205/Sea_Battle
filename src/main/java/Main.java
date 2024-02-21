@@ -101,6 +101,7 @@ public class Main {
             try {
                 if (flag) {
                     System.out.println("Стреляет " + player1.getName());
+                    battleBoardPlayer1.printBattleField(11, 11);
 
                     String stringY = scanner.nextLine();
                     String stringX = scanner.nextLine();
@@ -124,14 +125,13 @@ public class Main {
                     boolean hitPlayer1 = battleBoardPlayer1.printBattleField(y, x);
 
                     if (!hitPlayer1) {
-                        System.out.println("Вы промахнулись, стреляет " + player2.getName());
                         flag = false;
-                    } else {
-                        System.out.println("Вы попали! Продолжает стрелять " + player1.getName());
                     }
 
                 } else {
                     System.out.println("Стреляет " + player2.getName());
+                    battleBoardPlayer2.printBattleField(11, 11);
+                    System.out.println();
 
                     String stringW = scanner.nextLine();
                     String stringZ = scanner.nextLine();
@@ -141,15 +141,12 @@ public class Main {
 
                     boolean hitPlayer2 = battleBoardPlayer2.printBattleField(w, z);
 
+                    if (player2.getEnemyShip() == 0) {
+                        break;
+                    }
+
                     if (!hitPlayer2) {
-                        System.out.println("Вы промахнулись, стреляет " + player1.getName());
                         flag = true;
-                    } else {
-                        if (player2.getEnemyShip() != 0) {
-                            System.out.println("Вы попали! Продолжает стрелять " + player2.getName());
-                        } else {
-                            break;
-                        }
                     }
                 }
             } catch (Exception e) {

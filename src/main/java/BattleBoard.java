@@ -13,6 +13,16 @@ public class BattleBoard {
     public boolean printBattleField(int y, int x) {
         BattleShip[][] playerBattleShip = player.getBattleShip();
 
+        if (y == 11 && x == 11) {
+            for (int i = 0; i < battleField.length; i++) {
+                for (int j = 0; j < battleField.length; j++) {
+                    System.out.print(battleField[j][i].getName());
+                }
+                System.out.println();
+            }
+            return false;
+        }
+
         if (playerBattleShip[y][x] == BattleShip.BATTLE_SHIP) {
             battleField[y][x] = BattleShip.WOUND;
             playerBattleShip[y][x] = BattleShip.WOUND;
@@ -27,6 +37,7 @@ public class BattleBoard {
             }
             System.out.println("Точно в цель!");
             System.out.println("У соперника осталось кораблей: " + player.getEnemyShip());
+            System.out.println();
             return true;
         } else if (playerBattleShip[y][x] == BattleShip.WOUND) {
             battleField[y][x] = BattleShip.WOUND;
