@@ -26,6 +26,7 @@ public class Player {
                 System.out.print(battleShips[7][4] =  BattleShip.BATTLE_SHIP);
             }
         }
+        print();
     }
 
     public void print() {
