@@ -9,5 +9,8 @@
         <module name="Education" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Sea_Battle" target="16" />
+    </bytecodeTargetLevel>
   </component>
 </project>

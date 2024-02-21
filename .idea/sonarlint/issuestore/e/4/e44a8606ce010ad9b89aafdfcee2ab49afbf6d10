@@ -1,2 +1,5 @@
 
-L	java:S106("+Replace this use of System.err by a logger.(Ï§³şÿÿÿÿ8±»ŞÅÜ1
+X	java:S1254"<This block of commented-out lines of code should be removed.(Ôÿæ8•°·ŞÜ1
+X	java:S125:"<This block of commented-out lines of code should be removed.(‹Éÿ¼8üÊ·ŞÜ1
+P
+java:S1128".Remove this unused import 'java.util.Scanner'.(ÒÜÅ¸úÿÿÿÿ8ÔëªŞÜ1
