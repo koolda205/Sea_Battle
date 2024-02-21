@@ -1,9 +1,5 @@
 import java.util.Scanner;
 
-/**
- *
- */
-
 public class Main {
     public static void main(String[] args) {
 
@@ -87,32 +83,33 @@ public class Main {
 //        battleField[6 - 1][10 - 1] = BattleShip.BUSY;
 //        battleBoardPlayer1.printBattleField();
 //        battleBoardPlayer1.printPlayerBattleShip();
-        battleBoardPlayer2.printPlayerBattleShip();
+//        battleBoardPlayer2.printPlayerBattleShip();
 
-//        Scanner scanner = new Scanner(System.in);
-//
-//        while (true) {
-//
-//            String stringY = scanner.nextLine();
-//            String stringX = scanner.nextLine();
-//
-//            if (stringX.equalsIgnoreCase("stop") ||
-//                    stringY.equalsIgnoreCase("stop") ||
-//                    stringX.equalsIgnoreCase("стоп") ||
-//                    stringY.equalsIgnoreCase("стоп")) {
-//                break;
-//            }
-//
-//            try {
-//                int x = Integer.parseInt(stringX) - 1;
-//                int y = Integer.parseInt(stringY) - 1;
-//
-//                battleField[x][y] = BattleFieldP1.BUSY;
-//                dk.print(x, y);
-//
-//            } catch (Exception e) {
-//                System.err.println("Введите число");
-//            }
-//        }
+        Scanner scanner = new Scanner(System.in);
+
+        while (player1.getLive() > 0 || player2.getLive() > 0) {
+
+            String stringY = scanner.nextLine();
+            String stringX = scanner.nextLine();
+
+            if (stringX.equalsIgnoreCase("stop") ||
+                    stringY.equalsIgnoreCase("stop") ||
+                    stringX.equalsIgnoreCase("стоп") ||
+                    stringY.equalsIgnoreCase("стоп")) {
+                break;
+            }
+
+            try {
+                int y = Integer.parseInt(stringY) - 1;
+                int x = Integer.parseInt(stringX) - 1;
+
+                battleField[y][x] = BattleShip.BUSY;
+                battleBoardPlayer1.printBattleField();
+
+            } catch (Exception e) {
+                System.err.println("Введите число");
+            }
+        }
+        System.out.println("Game over!");
     }
 }

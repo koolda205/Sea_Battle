@@ -1,9 +1,8 @@
 
 h
-java:S1854T"FRemove this useless assignment to local variable "battleBoardPlayer1".(Ò³³¤ûÿÿÿÿ8‘°ìæÜ1
+java:S1854Q"FRemove this useless assignment to local variable "battleBoardPlayer2".(èâıåøÿÿÿÿ8€½„çÜ1
 Y
-java:S1481T"7Remove this unused "battleBoardPlayer1" local variable.(Ò³³¤ûÿÿÿÿ8—°ìæÜ1
-]	java:S125W"<This block of commented-out lines of code should be removed.(œ“Íúÿÿÿÿ8ËñŞæÜ1
-X	java:S125\"<This block of commented-out lines of code should be removed.(‹Éÿ¼8ÌñŞæÜ1
-P
-java:S1128".Remove this unused import 'java.util.Scanner'.(ÒÜÅ¸úÿÿÿÿ8‚€éæÜ1
+java:S1481Q"7Remove this unused "battleBoardPlayer2" local variable.(èâıåøÿÿÿÿ8‡½„çÜ1
+]	java:S125S"<This block of commented-out lines of code should be removed.(œ“Íúÿÿÿÿ8‡½„çÜ1
+L	java:S106n"+Replace this use of System.err by a logger.(Ï§³şÿÿÿÿ8¢½„çÜ1
+L	java:S106q"+Replace this use of System.out by a logger.(ˆ³ÎŒûÿÿÿÿ8¢½„çÜ1

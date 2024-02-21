@@ -12,6 +12,7 @@ public class BattleBoard {
     }
 
     public void printBattleField() {
+
         for (int i = 0; i < battleField.length; i++) {
             for (int j = 0; j < battleField.length; j++) {
                 System.out.print(battleField[j][i].getName());
