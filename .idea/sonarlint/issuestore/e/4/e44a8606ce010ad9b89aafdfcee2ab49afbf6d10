@@ -1,8 +1,7 @@
 
-h
-java:S1854Q"FRemove this useless assignment to local variable "battleBoardPlayer2".(èâıåøÿÿÿÿ8»³«çÜ1
-Y
-java:S1481Q"7Remove this unused "battleBoardPlayer2" local variable.(èâıåøÿÿÿÿ8À³«çÜ1
-]	java:S125S"<This block of commented-out lines of code should be removed.(œ“Íúÿÿÿÿ8À³«çÜ1
-G	java:S106n"+Replace this use of System.err by a logger.(êı÷‚8È³«çÜ1
-L	java:S106q"+Replace this use of System.out by a logger.(ˆ³ÎŒûÿÿÿÿ8È³«çÜ1
+F
+java:S1481Z")Remove this unused "flag" local variable.(Ö°š·8û­ÎèÜ1
+G	java:S106m"+Replace this use of System.out by a logger.(à®Š¸8ı­ÎèÜ1
+L	java:S106w"+Replace this use of System.out by a logger.(Šµâòøÿÿÿÿ8ş­ÎèÜ1
+G	java:S106z"+Replace this use of System.err by a logger.(êı÷‚8ş­ÎèÜ1
+L	java:S106}"+Replace this use of System.out by a logger.(ˆ³ÎŒûÿÿÿÿ8ş­ÎèÜ1

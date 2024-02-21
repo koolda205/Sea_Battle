@@ -15,3 +15,5 @@ G
 src/main/java/Main.java,e\4\e44a8606ce010ad9b89aafdfcee2ab49afbf6d10
 =
 Education.iml,d\4\d4e17da48d3f3bb0ae65173a0250fdd3498e368e
+I
+src/main/java/Player.java,6\e\6e82b9511465c9772497936644008abf2f008450
