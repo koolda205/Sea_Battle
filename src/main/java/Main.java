@@ -107,7 +107,7 @@ public class Main {
                 battleBoardPlayer1.printBattleField();
 
             } catch (Exception e) {
-                System.err.println("Введите число");
+                System.err.println("Введите число от 1 до 10");
             }
         }
         System.out.println("Game over!");
