@@ -1,5 +1,9 @@
 
-X	java:S1254"<This block of commented-out lines of code should be removed.(Ôÿæ8•°·ŞÜ1
-X	java:S125:"<This block of commented-out lines of code should be removed.(‹Éÿ¼8üÊ·ŞÜ1
+h
+java:S1854T"FRemove this useless assignment to local variable "battleBoardPlayer1".(Ò³³¤ûÿÿÿÿ8‘°ìæÜ1
+Y
+java:S1481T"7Remove this unused "battleBoardPlayer1" local variable.(Ò³³¤ûÿÿÿÿ8—°ìæÜ1
+]	java:S125W"<This block of commented-out lines of code should be removed.(œ“Íúÿÿÿÿ8ËñŞæÜ1
+X	java:S125\"<This block of commented-out lines of code should be removed.(‹Éÿ¼8ÌñŞæÜ1
 P
-java:S1128".Remove this unused import 'java.util.Scanner'.(ÒÜÅ¸úÿÿÿÿ8ÔëªŞÜ1
+java:S1128".Remove this unused import 'java.util.Scanner'.(ÒÜÅ¸úÿÿÿÿ8‚€éæÜ1
