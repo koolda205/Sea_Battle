@@ -13,12 +13,17 @@ public class BattleBoard {
     }
     public boolean playerShoots (String stringScaner, String stringScaner2) {
 
+
         int coordinateY = 0;
         int coordinateX = 0;
             try {
                 coordinateY = Integer.parseInt(stringScaner) - 1;
                 coordinateX = Integer.parseInt(stringScaner2) - 1;
             } catch (Exception e) {
+                System.err.println("Введите число от 1 до 10");
+                return true;
+            }
+            if (coordinateY < 0 || coordinateY > 9 || coordinateX < 0 || coordinateX > 9){
                 System.err.println("Введите число от 1 до 10");
                 return true;
             }
