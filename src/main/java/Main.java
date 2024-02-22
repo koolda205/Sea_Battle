@@ -88,68 +88,64 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        boolean flag = true;
+
+        boolean turnPlayer1 = true;
 
         while (player1.getEnemyShip() > 0 || player2.getEnemyShip() > 0) {
-            try {
-                if (flag) {
-                    System.out.println("Стреляет " + player1.getName());
-                    battleBoardPlayer1.printBattleField(11, 11);
 
-                    String stringY = scanner.nextLine();
-                    String stringX = scanner.nextLine();
+            if (turnPlayer1) {
 
-                    if (stringX.equalsIgnoreCase("stop") ||
-                            stringY.equalsIgnoreCase("stop") ||
-                            stringX.equalsIgnoreCase("стоп") ||
-                            stringY.equalsIgnoreCase("стоп")) {
-                        break;
-                    } else if (stringX.equalsIgnoreCase("сколько осталось жить первому") ||
-                            stringY.equalsIgnoreCase("сколько осталось жить первому")) {
-                        player2.getEnemyShip();
-                    } else if (stringX.equalsIgnoreCase("сколько осталось жить второму") ||
-                            stringY.equalsIgnoreCase("сколько осталось жить второму")) {
-                        player2.getEnemyShip();
-                    }
+                System.out.println("Стреляет " + player1.getName());
+                battleBoardPlayer1.printBattleField();
 
-                    int y = Integer.parseInt(stringY) - 1;
-                    int x = Integer.parseInt(stringX) - 1;
+                String stringScaner = scanner.nextLine();
+                String stringScaner2 = scanner.nextLine();
 
-                    boolean hitPlayer1 = battleBoardPlayer1.printBattleField(y, x);
-
-                    if (!hitPlayer1) {
-                        flag = false;
-                    }
-
-                } else {
-                    System.out.println("Стреляет " + player2.getName());
-                    battleBoardPlayer2.printBattleField(11, 11);
-                    System.out.println();
-
-                    String stringW = scanner.nextLine();
-                    String stringZ = scanner.nextLine();
-
-                    int w = Integer.parseInt(stringW) - 1;
-                    int z = Integer.parseInt(stringZ) - 1;
-
-                    boolean hitPlayer2 = battleBoardPlayer2.printBattleField(w, z);
-
-                    if (player2.getEnemyShip() == 0) {
-                        break;
-                    }
-
-                    if (!hitPlayer2) {
-                        flag = true;
-                    }
+                if (stringScaner.equals("выход")) {
+                    break;
+                } else if (stringScaner.equals("жизни")) {
+                    System.out.println("У соперника осталось: " + player1.getEnemyShip());
                 }
-            } catch (Exception e) {
-                System.err.println("Введите число от 1 до 10");
+
+                boolean hitPlayer1 = battleBoardPlayer1.playerShoots(stringScaner, stringScaner2);
+
+                if (!hitPlayer1) {
+                    turnPlayer1 = false;
+                }
+
+            } else {
+                System.out.println("Стреляет " + player2.getName());
+                battleBoardPlayer2.printBattleField();
+
+                String stringScaner = scanner.nextLine();
+                String stringScaner2 = scanner.nextLine();
+
+                if (stringScaner.equals("выход")) {
+                    break;
+                } else if (stringScaner.equals("жизни")) {
+                    System.out.println("У соперника осталось: " + player2.getEnemyShip());
+                }
+
+                boolean hitPlayer2 = battleBoardPlayer2.playerShoots(stringScaner, stringScaner2);
+
+                if (player2.getEnemyShip() == 0) {
+                    break;
+                }
+
+                if (!hitPlayer2) {
+                    turnPlayer1 = true;
+                }
             }
         }
-        String winner = (player1.getEnemyShip() == 0) ?
-                "Победил " + player1.getName() + "!" :
-                "Победил " + player2.getName() + "!";
+        System.out.println((player1.getEnemyShip() < player2.getEnemyShip()) ?
+                ("Победил " + player1.getName() + "!") :
+                ("Победил " + player2.getName() + "!"));
 
-        System.out.println(winner);
     }
+
+    static void exitGame() {
+        return;
+    }
+
+
 }

@@ -1,9 +1,12 @@
 
-u	java:S135d"YReduce the total number of break and continue statements in this loop to use at most one.(–õºá8ó¯¤ïÜ1
+u	java:S135^"YReduce the total number of break and continue statements in this loop to use at most one.(–õºá8²ž´—Ý1
+X	java:S125"<This block of commented-out lines of code should be removed.( ¤¾ï8ÿž´—Ý1
 o
-java:S3776^"RRefactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.(Ï°Ý€8ü¯¤ïÜ1
-L	java:S106g"+Replace this use of System.out by a logger.(½¬üÂøÿÿÿÿ8þ¯¤ïÜ1
-H	java:S106„"+Replace this use of System.out by a logger.(ªÉ÷ƒ8ÿ¯¤ïÜ1
-M	java:S106†"+Replace this use of System.out by a logger.(ªÓ¼áþÿÿÿÿ8ÿ¯¤ïÜ1
-H	java:S106™"+Replace this use of System.err by a logger.(êý÷‚8ÿ¯¤ïÜ1
-G	java:S106 "+Replace this use of System.out by a logger.(±èÄ18ÿ¯¤ïÜ1
+java:S3776W"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(Ï°Ý€8Ÿ´—Ý1
+L	java:S106b"+Replace this use of System.out by a logger.(½¬üÂøÿÿÿÿ8„Ÿ´—Ý1
+F	java:S106k"+Replace this use of System.out by a logger.(ˆµÿK8…Ÿ´—Ý1
+G	java:S106u"+Replace this use of System.out by a logger.(ªÉ÷ƒ8…Ÿ´—Ý1
+G	java:S106~"+Replace this use of System.out by a logger.(ÆÓë©8‡èÔ—Ý1
+M	java:S106Œ"+Replace this use of System.out by a logger.(ûí–§þÿÿÿÿ8ò¾Ú—Ý1
+9
+java:S3626“"Remove this redundant jump.(ûÁÝ…8†Ÿ´—Ý1
