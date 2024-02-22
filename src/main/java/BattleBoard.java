@@ -6,18 +6,23 @@ public class BattleBoard {
     private Player player;
 
     public BattleBoard(Player player) {
-        this.battleField = new BattleShip[10][10];
         this.player = player;
-    }
-
-    public void getPlayerBattleField() {
-        BattleShip[][] emptyBattleField = new BattleShip[10][10];
+        battleField = new BattleShip[10][10];
         for (int x = 0; x < battleField.length; x++) {
             for (int y = 0; y < battleField.length; y++) {
                 battleField[x][y] = BattleShip.EMPTY;
             }
         }
     }
+
+//    public void getPlayerBattleField() {
+//
+//        for (int x = 0; x < battleField.length; x++) {
+//            for (int y = 0; y < battleField.length; y++) {
+//                battleField[x][y] = BattleShip.EMPTY;
+//            }
+//        }
+//    }
 
     public boolean printBattleField(int y, int x) {
         BattleShip[][] playerBattleShip = player.getBattleShip();

@@ -3,14 +3,12 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-
-
-        BattleShip[][] battleFieldPlayer2 = new BattleShip[10][10];
-        for (int x = 0; x < battleFieldPlayer2.length; x++) {
-            for (int y = 0; y < battleFieldPlayer2.length; y++) {
-                battleFieldPlayer2[x][y] = BattleShip.EMPTY;
-            }
-        }
+//        BattleShip[][] battleFieldPlayer2 = new BattleShip[10][10];
+//        for (int x = 0; x < battleFieldPlayer2.length; x++) {
+//            for (int y = 0; y < battleFieldPlayer2.length; y++) {
+//                battleFieldPlayer2[x][y] = BattleShip.EMPTY;
+//            }
+//        }
         BattleShip[][] battleShipPlayer1 = {
                 {BattleShip.BATTLE_SHIP, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY,
                         BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY},
@@ -76,8 +74,8 @@ public class Main {
         };
 
 
-        Player player1 = new Player(battleShipPlayer1, "Player1", 3);
-        Player player2 = new Player(battleShipPlayer2, "Player2", 3);
+        Player player1 = new Player(battleShipPlayer1, "Player1");
+        Player player2 = new Player(battleShipPlayer2, "Player2");
 
         BattleBoard battleBoardPlayer1 = new BattleBoard(player1);
         BattleBoard battleBoardPlayer2 = new BattleBoard(player2);

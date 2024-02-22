@@ -6,10 +6,10 @@ public class Player {
     private String name;
     private int enemyShip;
 
-    public Player(BattleShip[][] battleShip, String name, int enemyShip) {
+    public Player(BattleShip[][] battleShip, String name) {
         this.battleShip = battleShip;
         this.name = name;
-        this.enemyShip = enemyShip;
+        this.enemyShip = 10;
     }
 
     public BattleShip[][] getBattleShip() {
