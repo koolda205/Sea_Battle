@@ -5,23 +5,24 @@ public class BattleBoard {
     private BattleShip[][] battleField;
     private Player player;
 
-    public BattleBoard(BattleShip[][] battleField, Player player) {
-        this.battleField = battleField;
+    public BattleBoard(Player player) {
+        this.battleField = new BattleShip[10][10];
         this.player = player;
+    }
+
+    public void getPlayerBattleField() {
+        BattleShip[][] emptyBattleField = new BattleShip[10][10];
+        for (int x = 0; x < battleField.length; x++) {
+            for (int y = 0; y < battleField.length; y++) {
+                battleField[x][y] = BattleShip.EMPTY;
+            }
+        }
     }
 
     public boolean printBattleField(int y, int x) {
         BattleShip[][] playerBattleShip = player.getBattleShip();
 
-        if (y == 11 && x == 11) {
-            for (int i = 0; i < battleField.length; i++) {
-                for (int j = 0; j < battleField.length; j++) {
-                    System.out.print(battleField[j][i].getName());
-                }
-                System.out.println();
-            }
-            return false;
-        }
+        printBattleField();
 
         if (playerBattleShip[y][x] == BattleShip.BATTLE_SHIP) {
             battleField[y][x] = BattleShip.WOUND;
@@ -29,12 +30,8 @@ public class BattleBoard {
             player.setBattleShip(playerBattleShip);
             player.setEnemyShip(player.getEnemyShip() - 1);
 
-            for (int i = 0; i < battleField.length; i++) {
-                for (int j = 0; j < battleField.length; j++) {
-                    System.out.print(battleField[j][i].getName());
-                }
-                System.out.println();
-            }
+            printBattleField();
+
             System.out.println("Точно в цель!");
             System.out.println("У соперника осталось кораблей: " + player.getEnemyShip());
             System.out.println();
@@ -42,12 +39,8 @@ public class BattleBoard {
         } else if (playerBattleShip[y][x] == BattleShip.WOUND) {
             battleField[y][x] = BattleShip.WOUND;
 
-            for (int i = 0; i < battleField.length; i++) {
-                for (int j = 0; j < battleField.length; j++) {
-                    System.out.print(battleField[j][i].getName());
-                }
-                System.out.println();
-            }
+            printBattleField();
+
             System.out.println("Метьтесь лучше, вы сюда уже стреляли!");
             System.out.println();
             return false;
@@ -56,12 +49,8 @@ public class BattleBoard {
             playerBattleShip[y][x] = BattleShip.BUSY;
             player.setBattleShip(playerBattleShip);
 
-            for (int i = 0; i < battleField.length; i++) {
-                for (int j = 0; j < battleField.length; j++) {
-                    System.out.print(battleField[j][i].getName());
-                }
-                System.out.println();
-            }
+            printBattleField();
+
             System.out.println("Мимо! В следующий раз обязательно повезет!");
             System.out.println();
             return false;
@@ -70,15 +59,21 @@ public class BattleBoard {
         playerBattleShip[y][x] = BattleShip.BUSY;
         player.setBattleShip(playerBattleShip);
 
+        printBattleField();
+
+        System.out.println("Метьтесь лучше, вы сюда уже стреляли!");
+        System.out.println();
+        return false;
+    }
+
+    private void printBattleField() {
+
         for (int i = 0; i < battleField.length; i++) {
             for (int j = 0; j < battleField.length; j++) {
                 System.out.print(battleField[j][i].getName());
             }
             System.out.println();
         }
-        System.out.println("Метьтесь лучше, вы сюда уже стреляли!");
-        System.out.println();
-        return false;
     }
 
     @Override
