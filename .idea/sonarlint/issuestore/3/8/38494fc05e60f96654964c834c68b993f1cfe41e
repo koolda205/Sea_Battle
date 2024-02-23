@@ -1,14 +1,25 @@
 
-G	java:S106"+Replace this use of System.err by a logger.(êı÷‚8¿™˜İ1
-G	java:S106"+Replace this use of System.err by a logger.(êı÷‚8¿™˜İ1
-G	java:S106*"+Replace this use of System.out by a logger.(–İ“é8¿™˜İ1
-G	java:S106+"+Replace this use of System.out by a logger.(«»”8¿™˜İ1
-L	java:S106,"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8¿™˜İ1
-G	java:S1060"+Replace this use of System.out by a logger.(¢¿„š8¿™˜İ1
-L	java:S1061"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8¿™˜İ1
-L	java:S1067"+Replace this use of System.out by a logger.(Í‹²‡şÿÿÿÿ8¿™˜İ1
-L	java:S1068"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8¿™˜İ1
-G	java:S106?"+Replace this use of System.out by a logger.(¢¿„š8¿™˜İ1
-L	java:S106@"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8¿™˜İ1
-G	java:S106H"+Replace this use of System.out by a logger.(İ›õÔ8‘¿™˜İ1
-L	java:S106J"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8‘¿™˜İ1
+†
+java:S1192"iDefine a constant instead of duplicating this literal "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ñ‡Ğ¸ÑĞ»Ğ¾ Ğ¾Ñ‚ 1 Ğ´Ğ¾ 10" 4 times.(êı÷‚8ö¶ş¦İ1
+G	java:S106"+Replace this use of System.err by a logger.(êı÷‚8–·ş¦İ1
+G	java:S106"+Replace this use of System.err by a logger.(êı÷‚8—·ş¦İ1
+X	java:S125("<This block of commented-out lines of code should be removed.(áÀíÿ8˜·ş¦İ1
+G	java:S106:"+Replace this use of System.out by a logger.(–İ“é8™·ş¦İ1
+G	java:S106;"+Replace this use of System.out by a logger.(«»”8™·ş¦İ1
+L	java:S106<"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8š·ş¦İ1
+G	java:S106@"+Replace this use of System.out by a logger.(¢¿„š8›·ş¦İ1
+L	java:S106A"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8›·ş¦İ1
+L	java:S106G"+Replace this use of System.out by a logger.(Í‹²‡şÿÿÿÿ8›·ş¦İ1
+L	java:S106H"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8›·ş¦İ1
+G	java:S106O"+Replace this use of System.out by a logger.(¢¿„š8œ·ş¦İ1
+L	java:S106P"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8œ·ş¦İ1
+G	java:S106\"+Replace this use of System.err by a logger.(êı÷‚8·ş¦İ1
+G	java:S106_"+Replace this use of System.err by a logger.(êı÷‚8·ş¦İ1
+G	java:S106o"+Replace this use of System.out by a logger.(İ›õÔ8Ÿ·ş¦İ1
+L	java:S106q"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8 ·ş¦İ1
+`
+java:S1854v"CRemove this useless assignment to local variable "enemyBattleShip".(ê¾š©8ÆÇ•§İ1
+Q
+java:S1481v"4Remove this unused "enemyBattleShip" local variable.(ê¾š©8ÇÇ•§İ1
+G	java:S106y"+Replace this use of System.out by a logger.(İ›õÔ8ÎÓ“§İ1
+L	java:S106{"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8ÎÓ“§İ1

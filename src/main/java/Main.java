@@ -87,6 +87,29 @@ public class Main {
     public static void seaBattle(Player player1, Player player2, BattleBoard battleBoardPlayer1, BattleBoard battleBoardPlayer2) {
 
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Поле заполняет первый игрок :");
+        battleBoardPlayer2.printEnemyBattleShip();
+
+        while (player2.getEnemyShip() < 3) {
+
+            String stringScaner = scanner.nextLine();
+            String stringScaner2 = scanner.nextLine();
+
+            battleBoardPlayer2.makeBattleShip(stringScaner, stringScaner2);
+
+        }
+        battleBoardPlayer2.printEnemyBattleShip();
+
+        while (player1.getEnemyShip() < 3) {
+
+            String stringScaner = scanner.nextLine();
+            String stringScaner2 = scanner.nextLine();
+
+            battleBoardPlayer1.makeBattleShip(stringScaner, stringScaner2);
+
+        }
+
+        battleBoardPlayer1.printEnemyBattleShip();
 
 
         boolean turnPlayer1 = true;
