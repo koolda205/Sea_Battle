@@ -1,13 +1,21 @@
 
-u	java:S135u"YReduce the total number of break and continue statements in this loop to use at most one.(–õºá8‡ç§İ1
-X	java:S125"<This block of commented-out lines of code should be removed.( ¤¾ï8œç§İ1
-o
-java:S3776W"RRefactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.(Ï°İ€8×¼§İ1
-G	java:S106Z"+Replace this use of System.out by a logger.(Æû¯§8†×¼§İ1
-L	java:S106y"+Replace this use of System.out by a logger.(½¬üÂøÿÿÿÿ8ˆ×¼§İ1
-G	java:S106‚"+Replace this use of System.out by a logger.(ˆµÿK8‰×¼§İ1
-H	java:S106Œ"+Replace this use of System.out by a logger.(ªÉ÷ƒ8‰×¼§İ1
-H	java:S106•"+Replace this use of System.out by a logger.(ÆÓë©8‹×¼§İ1
-M	java:S106£"+Replace this use of System.out by a logger.(ûí–§şÿÿÿÿ8‹×¼§İ1
+v	java:S135Ÿ"YReduce the total number of break and continue statements in this loop to use at most one.(å«šö8àÿê¿İ1
+X	java:S125"<This block of commented-out lines of code should be removed.( ¤¾ï8Ş‚‘¿İ1
+X	java:S125,"<This block of commented-out lines of code should be removed.(×æ¬á8Ş‚‘¿İ1
+L	java:S106Z"+Replace this use of System.out by a logger.(ıéüÆûÿÿÿÿ8à‚‘¿İ1
+G	java:S106]"+Replace this use of System.out by a logger.(ßŠ»É8á‚‘¿İ1
+G	java:S106`"+Replace this use of System.out by a logger.(úÏËî8¬üç¿İ1
+L	java:S106d"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8­üç¿İ1
+L	java:S106e"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8æ€ë¿İ1
+L	java:S106f"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8æ€ë¿İ1
+G	java:S106y"+Replace this use of System.out by a logger.(Ò¤á­8é€ë¿İ1
+L	java:S106|"+Replace this use of System.out by a logger.(¤‡áÿøÿÿÿÿ8é€ë¿İ1
+M	java:S106…"+Replace this use of System.out by a logger.(½„´Ãúÿÿÿÿ8ë€ë¿İ1
+H	java:S106•"+Replace this use of System.out by a logger.(ÿÈ¶¨8ì€ë¿İ1
+M	java:S106—"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8í€ë¿İ1
+u
+java:S3776›"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(›Ä‡—ıÿÿÿÿ8î€ë¿İ1
+H	java:S106»"+Replace this use of System.out by a logger.(Ø“ÒÓ8ğ€ë¿İ1
+H	java:S106¾"+Replace this use of System.out by a logger.(¾İèš8ğ€ë¿İ1
 9
-java:S3626ª"Remove this redundant jump.(ûÁİ…8Œ×¼§İ1
+java:S3626Ä"Remove this redundant jump.(ûÁİ…8ğ€ë¿İ1

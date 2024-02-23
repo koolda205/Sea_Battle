@@ -9,39 +9,39 @@ public class Main {
 //                battleFieldPlayer2[x][y] = BattleShip.EMPTY;
 //            }
 //        }
-//        BattleShip[][] battleShipPlayer1 = {
-//                {BattleShip.BATTLE_SHIP, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY,
-//                        BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY},
-//
-//                {BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY,
-//                        BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY},
-//
-//                {BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY,
-//                        BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY},
-//
-//                {BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY,
-//                        BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY},
-//
-//                {BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY,
-//                        BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY},
-//
-//                {BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.BATTLE_SHIP,
-//                        BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY},
-//
-//                {BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY,
-//                        BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY},
-//
-//                {BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY,
-//                        BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY},
-//
-//                {BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY,
-//                        BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY},
-//
-//                {BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY,
-//                        BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.BATTLE_SHIP},
-//        };
-//
 //        BattleShip[][] battleShipPlayer2 = {
+//                {BattleShip.BATTLE_SHIP, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY,
+//                        BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY},
+//
+//                {BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY,
+//                        BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY},
+//
+//                {BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY,
+//                        BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY},
+//
+//                {BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY,
+//                        BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY},
+//
+//                {BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY,
+//                        BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY},
+//
+//                {BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.BATTLE_SHIP,
+//                        BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY},
+//
+//                {BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY,
+//                        BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY},
+//
+//                {BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY,
+//                        BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY},
+//
+//                {BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY,
+//                        BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY},
+//
+//                {BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY,
+//                        BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.BATTLE_SHIP},
+//        };
+
+//        BattleShip[][] battleShipPlayer1 = {
 //                {BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY,
 //                        BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.EMPTY, BattleShip.BATTLE_SHIP},
 //
@@ -74,108 +74,107 @@ public class Main {
 //        };
 //
 //
-//        Player player1 = new Player(battleShipPlayer1, "Player1");
-//        Player player2 = new Player(battleShipPlayer2, "Player2");
+//        Player player1 = new Player(battleShipPlayer2, "Player1");
+//        Player player2 = new Player(battleShipPlayer1, "Player2");
 //
 //        BattleBoard battleBoardPlayer1 = new BattleBoard(player1);
 //        BattleBoard battleBoardPlayer2 = new BattleBoard(player2);
-
-
-        seaBattle();
-    }
-
-    public static void seaBattle() {
-
         BattleShip[][] battleShipPlayer1 = new BattleShip[10][10];
         BattleShip[][] battleShipPlayer2 = new BattleShip[10][10];
 
+        fillBattleFieldsEmpty(battleShipPlayer1);
+        fillBattleFieldsEmpty(battleShipPlayer2);
+
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Поле заполняет первый игрок :");
 
-        for (int x = 0; x < battleShipPlayer1.length; x++) {
-            for (int y = 0; y < battleShipPlayer1.length; y++) {
-                battleShipPlayer1[x][y] = BattleShip.EMPTY;
-                System.out.println(battleShipPlayer1[x][y]);
-            }
-            System.out.println();
-        }
+        System.out.println("Игра началась");
+        printBattleField(battleShipPlayer2);
 
-        int counter = 2;
+        System.out.println("Поле заполняет игрок 1");
+        fillPlayerBattleField(scanner, battleShipPlayer1);
 
-        while (counter < 2) {
+        System.out.println("Поле заполняет игрок 2");
+        fillPlayerBattleField(scanner, battleShipPlayer2);
 
-            int intScaner = scanner.nextInt();
-            int intScaner2 = scanner.nextInt();
 
-            for (int x = 0; x < battleShipPlayer1.length; x++) {
-                for (int y = 0; y < battleShipPlayer1.length; y++) {
-                    battleShipPlayer1[intScaner][intScaner2] = BattleShip.EMPTY;
-                    System.out.println(battleShipPlayer1[x][y]);
-                }
-                System.out.println();
-            }
+        System.out.println();
+        System.out.println();
+        System.out.println();
 
-        }
-//        battleBoardPlayer2.printEnemyBattleShip();
-//
-//        while (player1.getEnemyShip() < 3) {
-//
-//            String stringScaner = scanner.nextLine();
-//            String stringScaner2 = scanner.nextLine();
-//
-//            battleBoardPlayer1.makeBattleShip(stringScaner, stringScaner2);
-//
-//        }
-//
-//        battleBoardPlayer1.printEnemyBattleShip();
-
-        Player player1 = new Player(battleShipPlayer1, "Player1");
-        Player player2 = new Player(battleShipPlayer2, "Player2");
+        Player player1 = new Player(battleShipPlayer2, "Player1");
+        Player player2 = new Player(battleShipPlayer1, "Player2");
 
         BattleBoard battleBoardPlayer1 = new BattleBoard(player1);
         BattleBoard battleBoardPlayer2 = new BattleBoard(player2);
 
+        startSeaBattle(scanner, player1, player2, battleBoardPlayer1, battleBoardPlayer2);
+    }
+
+    static void fillPlayerBattleField(Scanner scanner, BattleShip[][] battleShipPlayer) {
+
+        int counter = 0;
+
+        while (counter < 1) {
+            int intScaner = 0;
+            int intScaner2 = 0;
+            try {
+                System.out.println("Введите первое число от 1 до 10");
+                intScaner = Integer.parseInt(scanner.nextLine());
+
+                System.out.println("Введите второе число от 1 до 10");
+                intScaner2 = Integer.parseInt(scanner.nextLine());
+
+                battleShipPlayer[intScaner2 - 1][intScaner - 1] = BattleShip.BATTLE_SHIP;
+                counter++;
+
+                printBattleField(battleShipPlayer);
+
+            } catch (Exception e) {
+                System.out.println("Ошибка!");
+            }
+        }
+    }
+
+    static void fillBattleFieldsEmpty(BattleShip[][] battleShipPlayer) {
+        for (int x = 0; x < battleShipPlayer.length; x++) {
+            for (int y = 0; y < battleShipPlayer.length; y++) {
+                battleShipPlayer[x][y] = BattleShip.EMPTY;
+            }
+        }
+    }
+
+    static void printBattleField(BattleShip[][] battleShipPlayer) {
+        for (int x = 0; x < battleShipPlayer.length; x++) {
+            for (int y = 0; y < battleShipPlayer.length; y++) {
+                System.out.print(battleShipPlayer[x][y]);
+            }
+            System.out.println();
+        }
+    }
+
+    public static void startSeaBattle(Scanner scanner, Player player1, Player player2, BattleBoard battleBoardPlayer1, BattleBoard battleBoardPlayer2) {
 
         boolean turnPlayer1 = true;
 
-        while (player1.getEnemyShip() > 0 || player2.getEnemyShip() > 0) {
+        while (player1.getEmountEnemyShip() != 0 || player2.getEmountEnemyShip() != 0) {
 
             if (turnPlayer1) {
 
-                System.out.println("Стреляет " + player1.getName());
-                battleBoardPlayer1.printBattleField();
+                boolean hitPlayer1 = battleBoardPlayer1.shot(scanner);
 
-                String stringScaner = scanner.nextLine();
-                String stringScaner2 = scanner.nextLine();
-
-                if (stringScaner.equals("выход")) {
+                if (player1.getEmountEnemyShip() == 0) {
                     break;
-                } else if (stringScaner.equals("жизни")) {
-                    System.out.println("У соперника осталось: " + player1.getEnemyShip());
                 }
-
-                boolean hitPlayer1 = battleBoardPlayer1.playerShoots(stringScaner, stringScaner2);
 
                 if (!hitPlayer1) {
                     turnPlayer1 = false;
                 }
 
             } else {
-                System.out.println("Стреляет " + player2.getName());
-                battleBoardPlayer2.printBattleField();
 
-                String stringScaner = scanner.nextLine();
-                String stringScaner2 = scanner.nextLine();
+                boolean hitPlayer2 = battleBoardPlayer2.shot(scanner);
 
-                if (stringScaner.equals("выход")) {
-                    break;
-                } else if (stringScaner.equals("жизни")) {
-                    System.out.println("У соперника осталось: " + player2.getEnemyShip());
-                }
-
-                boolean hitPlayer2 = battleBoardPlayer2.playerShoots(stringScaner, stringScaner2);
-
-                if (player2.getEnemyShip() == 0) {
+                if (player2.getEmountEnemyShip() == 0) {
                     break;
                 }
 
@@ -184,10 +183,13 @@ public class Main {
                 }
             }
         }
-        System.out.println((player1.getEnemyShip() < player2.getEnemyShip()) ?
-                ("Победил " + player1.getName() + "!") :
-                ("Победил " + player2.getName() + "!"));
-
+        if (player1.getEmountEnemyShip() < player2.getEmountEnemyShip()) {
+            System.out.println("Победил " + player1.getName() + "!");
+            battleBoardPlayer1.printBattleField();
+        } else {
+            System.out.println("Победил " + player2.getName() + "!");
+            battleBoardPlayer2.printBattleField();
+        }
     }
 
     static void exitGame() {

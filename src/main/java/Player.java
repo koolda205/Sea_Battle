@@ -1,12 +1,12 @@
 public class Player {
     private BattleShip[][] enemyBattleShip;
     private String name;
-    private int enemyShip;
+    private int emountEnemyShip;
 
     public Player(BattleShip[][] enemyBattleShip, String name) {
         this.enemyBattleShip = enemyBattleShip;
         this.name = name;
-        this.enemyShip = 2;
+        this.emountEnemyShip = 1;
     }
 
     public BattleShip[][] getEnemyBattleShip() {
@@ -25,12 +25,13 @@ public class Player {
         this.name = name;
     }
 
-    public int getEnemyShip() {
-        return enemyShip;
+    public int getEmountEnemyShip() {
+        return emountEnemyShip;
     }
 
-    public void setEnemyShip(int enemyShip) {
-        this.enemyShip = enemyShip;
+    public void setEmountEnemyShip(int emountEnemyShip) {
+        this.emountEnemyShip = emountEnemyShip;
     }
+
 
 }

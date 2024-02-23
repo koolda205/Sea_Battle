@@ -26,9 +26,6 @@ public enum BattleShip {
 
     @Override
     public String toString() {
-        return "ChessPiece{" +
-                "chessValue=" + shipValue +
-                ", name='" + name + '\'' +
-                '}';
+        return name;
     }
 }
